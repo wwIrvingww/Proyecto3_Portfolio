@@ -1,12 +1,10 @@
 import Image from "next/image";
-import Main from "../components/Main";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#192655]">
-      <div class='container mx-auto px-12 py-4'>
-        <Main/>
-      </div>
+    <main className={styles.main}>
+      <h1 className={styles.title}>Welcome to my portfolio</h1>
     </main>
   );
 }
