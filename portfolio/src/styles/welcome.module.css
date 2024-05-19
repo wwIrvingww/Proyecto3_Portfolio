@@ -1,0 +1,47 @@
+.container {
+    position: absolute;
+    bottom: 30vh;
+    text-align: left;
+    align-self: start;
+   
+}
+  
+.title {
+    font-size: 2.5rem;
+    color: #F3F0CA;
+    margin-bottom: 20px;
+}
+  
+.description {
+    font-size: 1.25rem;
+    color: #E1AA74;
+    text-align: left;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.button {
+    background-color: #3876BF;
+    color: #192655;
+    padding: 10px 20px;
+    border-radius: 45px;
+    font-size: 1.25rem;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover {
+    background-color: #E1AA74; /* Nuevo color de fondo cuando se pasa el mouse por encima */
+    color: #192655; /* Nuevo color de texto cuando se pasa el mouse por encima */
+}
+
+.cat {
+    position: absolute;
+    bottom: calc(50% - 65px);
+    right: 25vw; /* Alineado a la derecha */
+    height: 170px;
+    width: 192.1px; /* 170px * 1.13 */
+}
