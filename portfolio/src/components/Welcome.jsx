@@ -1,11 +1,14 @@
 import React from 'react'
 import styles from '../styles/welcome.module.css'
 import Cat from './Cat';
-
+import Sidebar from './Sidebar';
+import Navbar from './Navbar';
 
 const Welcome = () => {
     return (
         <>
+            <Navbar/>
+            <Sidebar />
             <div className={styles.container}>
               <h1 className={styles.title}>I'm Irving</h1>
               <p className={styles.description}>

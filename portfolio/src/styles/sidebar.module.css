@@ -1,0 +1,17 @@
+/* sidebar.module.css */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+    left: 0; 
+    bottom: -15vh;
+    transform: translateY(-50%); 
+    padding: 10px; 
+    
+  }
+  
+  .icon {
+    margin: 20px 0; 
+    cursor: pointer; 
+  }
+  
