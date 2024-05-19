@@ -5,13 +5,14 @@ import AboutMe from "@/components/AboutMe";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Navbar />
       <Sidebar />
-      <Projects />
+     <Contact />
     </main>
   );
 }
