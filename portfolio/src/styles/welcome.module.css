@@ -40,7 +40,7 @@
 
 .cat {
     position: absolute;
-    bottom: calc(50% - 65px);
+    bottom: 50%;
     right: 25vw; /* Alineado a la derecha */
     height: 170px;
     width: 192.1px; /* 170px * 1.13 */

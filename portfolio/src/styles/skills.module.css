@@ -1,0 +1,71 @@
+/* skills.module.css */
+
+.skillsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Para centrar horizontalmente */
+    text-align: center; /* Para centrar el texto */
+  }
+  
+  .container {
+    margin-top: 20px; /* Espacio entre el texto y las habilidades */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Cambiado */
+    padding: 20px;
+  }
+  
+  .text {
+    text-align: start;
+  }
+  
+  .title {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  
+  .description {
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.2rem;
+  }
+  
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: #3876BF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    border-radius: 15px;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    gap: 10px;
+    z-index: 5;
+    transition: all .3s ease-in-out;
+  }
+  
+  .skillImage {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .skill img {
+    max-width: 50px;
+    max-height: 50px;
+  }
