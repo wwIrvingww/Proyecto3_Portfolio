@@ -1,28 +1,31 @@
+"use client";
 import React from 'react';
-import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
 import styles from '../styles/Navbar.module.css';
 
 const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logoContainer}>
-        <h2>PORTFOLIO</h2>
+        <ScrollLink to="welcome-container" smooth={true} duration={500} spy={true} className={styles.element}>
+          PORTFOLIO
+        </ScrollLink>
       </div>
       <div className={styles.controls}>
         <div className={styles.nav}>
-          <Link href="/about" legacyBehavior>
-            <a className={styles.element}>About Me</a>
-          </Link>
-          <Link href="/projects" legacyBehavior>
-            <a className={styles.element}>Projects</a>
-          </Link>
-          <Link href="/contact" legacyBehavior>
-            <a className={styles.element}>Contact Info</a>
-          </Link>
+          <ScrollLink to="about" smooth={true} duration={500} spy={true} className={styles.element}>
+            About Me
+          </ScrollLink>
+          <ScrollLink to="projects" smooth={true} duration={500} spy={true} className={styles.element}>
+            Projects
+          </ScrollLink>
+          <ScrollLink to="contact" smooth={true} duration={500} spy={true} className={styles.element}>
+            Contact Info
+          </ScrollLink>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

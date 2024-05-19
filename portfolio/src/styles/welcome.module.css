@@ -1,10 +1,15 @@
 .container {
     position: absolute;
-    bottom: 30vh;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: left;
     align-self: start;
-   
-}
+    width: 600px; /* Ancho fijo */
+    height: 400px; /* Alto fijo */
+  }
+  
+  
   
 .title {
     font-size: 2.5rem;
