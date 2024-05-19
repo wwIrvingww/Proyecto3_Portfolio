@@ -1,4 +1,4 @@
-// app/page.js
+// pages/index.js
 import Welcome from "@/components/Welcome";
 
 export default function Index() {

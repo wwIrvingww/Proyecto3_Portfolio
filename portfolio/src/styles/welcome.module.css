@@ -1,12 +1,12 @@
 .container {
     position: absolute;
-    top: 10vh;
-    left: 50%;
+    top: 20vh;
+    left: 33%;
     transform: translateX(-50%);
     text-align: left;
     align-self: start;
-    width: 600px; /* Ancho fijo */
-    height: 400px; /* Alto fijo */
+    width: 600px;
+    height: 400px;
   }
   
   
@@ -15,6 +15,7 @@
     font-size: 2.5rem;
     color: #F3F0CA;
     margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
 }
   
 .description {
@@ -23,6 +24,7 @@
     text-align: left;
     max-width: 600px;
     line-height: 1.5;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 .button {
@@ -36,6 +38,7 @@
     display: inline-block;
     cursor: pointer;
     border: none;
+    font-family: 'Biryani', sans-serif;
 }
 
 .button:hover {
@@ -45,8 +48,8 @@
 
 .cat {
     position: absolute;
-    bottom: 50%;
-    right: 25vw;
+    bottom: 10%;
+    right: 15vw;
     height: 170px;
     width: 192.1px;
 }

@@ -1,22 +1,23 @@
-// Welcome.jsx
+// components/Welcome.jsx
+import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/welcome.module.css';
 import Cat from './Cat';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 
-const WelcomeSection = () => {
+const Welcome = () => {
   return (
     <>
-      <Navbar />
-      <Sidebar />
       <div id="welcome-container" className={styles.container}>
         <h1 className={styles.title}>I'm Irving</h1>
         <p className={styles.description}>
           Hello! I'm a web developer with a passion for creating sleek and efficient user interfaces. I love working with
           modern web technologies and continuously learning new things to improve my skills.
         </p>
-        <button className={styles.button}>Contact Me</button>
+        <Link href="/home">
+          <button className={styles.button}>Get Started</button>
+        </Link>
       </div>
       <div className={styles.cat}>
         <Cat />
@@ -25,4 +26,4 @@ const WelcomeSection = () => {
   );
 };
 
-export default WelcomeSection;
+export default Welcome;
