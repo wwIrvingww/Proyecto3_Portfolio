@@ -1,41 +1,41 @@
-/* aboutme.module.css */
-
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    max-height: 25vh;
-  }
-  
-  .card {
-    display: flex;
-    height: 75vh;
-    margin-top: 50vh;
-    width: 80%; /* Ajusta el ancho total de la tarjeta */
-    max-width: 1200px; /* Establece un ancho máximo para la tarjeta */
-    background-color: #2e3d3b;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Asegúrate de que el contenido no se desborde */
-  }
-  
-  .imageSection {
-    width: 40%; /* 40% del ancho total para la imagen */
-    background-color: #444; /* Color de fondo de la imagen (opcional) */
-  }
-  
-  .imageSection img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .infoSection {
-    width: 60%; /* 60% del ancho total para la información */
-    padding: 40px; /* Ajusta el relleno interno de la tarjeta de información */
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  height: 75vh;
+  max-width: 1200px;
+  background-color: #2e3d3b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.imageSection {
+  width: 40%;
+  background-color: #444;
+}
+
+.imageSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoSection {
+  width: 60%;
+  padding: 20px;
+  color: #ffffff;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+
+.infoSection::-webkit-scrollbar {
+  display: none;
+}

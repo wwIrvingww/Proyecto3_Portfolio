@@ -1,15 +1,25 @@
-// components/Navbar.jsx
 import React from 'react';
-import styles from '../styles/navbar.module.css';
+import Link from 'next/link';
+import styles from '../styles/Navbar.module.css';
 
 const Navbar = () => {
   return (
-    <div className={styles.navbar}>
-      <div className={styles.logo}>ME</div>
-      <div className={styles.links}>
-        <a href="#about" className={styles.link}>About Me</a>
-        <a href="#projects" className={styles.link}>Projects</a>
-        <a href="#contact" className={styles.link}>Contact Info</a>
+    <div className={styles.container}>
+      <div className={styles.logoContainer}>
+        <h2>PORTFOLIO</h2>
+      </div>
+      <div className={styles.controls}>
+        <div className={styles.nav}>
+          <Link href="/about" legacyBehavior>
+            <a className={styles.element}>About Me</a>
+          </Link>
+          <Link href="/projects" legacyBehavior>
+            <a className={styles.element}>Projects</a>
+          </Link>
+          <Link href="/contact" legacyBehavior>
+            <a className={styles.element}>Contact Info</a>
+          </Link>
+        </div>
       </div>
     </div>
   );

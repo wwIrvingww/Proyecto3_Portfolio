@@ -1,8 +1,7 @@
-/* cat.module.css */
 .cat {
     position: relative;
     height: 170px;
-    width: 192.1px; /* 170px * 1.13 */
+    width: 192.1px;
   }
   
   .ear {

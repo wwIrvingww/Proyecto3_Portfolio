@@ -1,34 +1,51 @@
-/* styles/Navbar.module.css */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 20px;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .link {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .link:hover {
-    text-decoration: underline;
-  }
-  
+.container {
+  font-size: 18px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  padding: 10px 20px;
+  height: 50px;
+  transition: transform 0.2s ease;
+  overflow: hidden;
+  position: fixed;
+  background-color: #333;
+  z-index: 1000;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  gap: 0.4rem;
+  transition: transform 1s cubic-bezier(.68,-.55,.27,1.55), opacity 1s cubic-bezier(.68,-.55,.27,1.55);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10vw;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 1;
+  align-items: center;
+  gap: 18px;
+  font-weight: 500;
+  user-select: none;
+}
+
+.element {
+  cursor: pointer;
+  transition: all 0.2s ease, transform 1s cubic-bezier(.68,-.55,.27,1.55), opacity 1s cubic-bezier(.68,-.55,.27,1.55);
+  color: white;
+  text-decoration: none;
+}
+
+.element:hover {
+  text-decoration: underline;
+}

@@ -1,4 +1,3 @@
-// Sidebar.jsx
 import React from 'react';
 import { AiOutlineMail, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import styles from '../styles/sidebar.module.css';

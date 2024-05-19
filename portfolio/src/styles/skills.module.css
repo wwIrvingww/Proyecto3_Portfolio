@@ -1,18 +1,16 @@
-/* skills.module.css */
-
 .skillsWrapper {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Para centrar horizontalmente */
-    text-align: center; /* Para centrar el texto */
+    align-items: center;
+    text-align: center;
   }
   
   .container {
-    margin-top: 20px; /* Espacio entre el texto y las habilidades */
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Cambiado */
+    width: 100%;
     padding: 20px;
   }
   

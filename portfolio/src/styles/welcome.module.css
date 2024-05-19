@@ -34,14 +34,14 @@
 }
 
 .button:hover {
-    background-color: #E1AA74; /* Nuevo color de fondo cuando se pasa el mouse por encima */
-    color: #192655; /* Nuevo color de texto cuando se pasa el mouse por encima */
+    background-color: #E1AA74;
+    color: #192655;
 }
 
 .cat {
     position: absolute;
     bottom: 50%;
-    right: 25vw; /* Alineado a la derecha */
+    right: 25vw;
     height: 170px;
-    width: 192.1px; /* 170px * 1.13 */
+    width: 192.1px;
 }
