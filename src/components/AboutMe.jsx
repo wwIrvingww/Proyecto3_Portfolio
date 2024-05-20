@@ -8,15 +8,15 @@ const AboutMe = () => {
       <div className={styles.container}>
         <div className={styles.card}>
           <div className={styles.imageSection}>
-            <img src="https://i.pinimg.com/736x/b7/c3/0a/b7c30a6a3d32ac6e4c38791b20780822.jpg" alt="Profile" />
+            <img src="https://i.pinimg.com/originals/a3/16/54/a31654e050312ef839b26d32228da541.jpg" alt="Profile" />
           </div>
           <div className={styles.infoSection}>
             <h2>About me</h2>
             <p>
-              My love for technology started at a young age when I got my first computer. I always wondered how it worked inside, which prompted my unstoppable desire to feed myself with information about each of its components.
+              I like programming, and I'm always looking for new challenges to learn from. I'm a frontend developer with experience in React and Node.js. I'm also familiar with Python and Java.
             </p>
             <p>
-              I graduated from a computer science institution in my native Dominican Republic in 2015. I remember my first calculator program on PSeInt in 2013. When I ran it, I really felt like I had superpowers.
+              I'm studying Computer Science at Universidad del Valle de Guatemala. I started programming when I was 15 years old, and I've been hooked ever since. I love the feeling of solving a problem and seeing the results of my work come to life.
             </p>
             <p>
               Fast forward to today, and here I am, still learning something new every day as I look for new challenges to grow in knowledge and experience.

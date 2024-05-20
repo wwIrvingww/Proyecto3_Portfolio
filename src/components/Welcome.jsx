@@ -10,8 +10,10 @@ const Welcome = () => {
       <div id="welcome-container" className={styles.container}>
         <h1 className={styles.title}>I'm Irving</h1>
         <p className={styles.description}>
-          Hello! I'm a web developer with a passion for creating sleek and efficient user interfaces. I love working with
-          modern web technologies and continuously learning new things to improve my skills.
+          Hello! I'm 19 years old. I'm in my third year of Computer Science at Universidad del Valle de Guatemala.
+          I like coffee, programming, and cats. I practiced swimming for 10 years, and I love to listen  Lana del Rey while I code.{
+            
+          }
         </p>
         <Link href="/home">
           <button className={styles.button}>Get Started</button>
