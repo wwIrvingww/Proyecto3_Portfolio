@@ -9,9 +9,10 @@
 
 .card {
   display: flex;
+  width: 90%;
+  max-width: 1000px;
   height: 75vh;
-  max-width: 1200px;
-  background-color: #2e3d3b;
+  background-color: #3876BF;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -31,10 +32,30 @@
 .infoSection {
   width: 60%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: #ffffff;
-  overflow-y: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none; 
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.infoSection h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.infoSection p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+.infoSection p:last-child {
+  margin-bottom: 0;
 }
 
 .infoSection::-webkit-scrollbar {

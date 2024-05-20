@@ -1,10 +1,8 @@
-// components/Welcome.jsx
 import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/welcome.module.css';
 import Cat from './Cat';
-import Sidebar from './Sidebar';
-import Navbar from './Navbar';
+
 
 const Welcome = () => {
   return (

@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logoContainer}>
-        <ScrollLink to="welcome" smooth={true} duration={500} spy={true} className={styles.element}>
+        <ScrollLink to="/" smooth={true} duration={500} spy={true} className={styles.element}>
           PORTFOLIO
         </ScrollLink>
       </div>
