@@ -8,7 +8,7 @@ const Skills = () => {
         <h1 className={styles.title}>My Skills</h1>
         <p className={styles.description}>
           The following skills are part of my toolbox. One of the things I
-          love is learning new technologies. It's amazing how huge technology
+          love is learning new technologies. It&apos;s amazing how huge technology
           is!
         </p>
       </div>

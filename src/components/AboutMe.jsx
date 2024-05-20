@@ -13,10 +13,10 @@ const AboutMe = () => {
           <div className={styles.infoSection}>
             <h2>About me</h2>
             <p>
-              I like programming, and I'm always looking for new challenges to learn from. I'm a frontend developer with experience in React and Node.js. I'm also familiar with Python and Java.
+              I like programming, and I&apos;m always looking for new challenges to learn from. I&apos;m a frontend developer with experience in React and Node.js. I&apos;m also familiar with Python and Java.
             </p>
             <p>
-              I'm studying Computer Science at Universidad del Valle de Guatemala. I started programming when I was 15 years old, and I've been hooked ever since. I love the feeling of solving a problem and seeing the results of my work come to life.
+              I&apos;m studying Computer Science at Universidad del Valle de Guatemala. I started programming when I was 15 years old, and I&apos;ve been hooked ever since. I love the feeling of solving a problem and seeing the results of my work come to life.
             </p>
             <p>
               Fast forward to today, and here I am, still learning something new every day as I look for new challenges to grow in knowledge and experience.

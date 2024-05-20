@@ -17,7 +17,7 @@ const Projects = () => {
     },
     {
       title: "Blog",
-      description: "This is a blog project where I write about my experiences as a chef. I share tips and tricks that I've learned along the way.",
+      description: "This is a blog project where I write about my experiences as a chef. I share tips and tricks that I&apos;ve learned along the way.",
       link: "https://github.com/wwIrvingww/Proyecto1_Blog.git",
       image: "https://i.pinimg.com/736x/23/a2/dc/23a2dc9c4c096fe3c87a6b5e9fb3dafc.jpg"
     },
@@ -61,7 +61,7 @@ const Projects = () => {
       <div className={styles.text}>
         <h1 className={styles.title}>My Projects</h1>
         <p className={styles.description}>
-          These are some of my favorite projects. I'm always looking for fun
+          These are some of my favorite projects. I&apos;m always looking for fun
           challenges to learn from. Any feedback is also appreciated!
         </p>
       </div>
