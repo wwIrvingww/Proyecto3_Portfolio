@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/skills.module.css';
 
-const Skills = () => {
+const _Skills = () => {
   return (
     <div className={styles.skillsWrapper}>
       <div className={styles.text}>
@@ -56,4 +56,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default _Skills;

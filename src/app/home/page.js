@@ -7,13 +7,13 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.main}>
-      <section id="about">
+      <section id="about" className={styles.section}>
         <AboutMe />
       </section>
-      <section id="projects">
+      <section id="projects" className={styles.section}>
         <Projects />
       </section>
-      <section id="contact">
+      <section id="contact" className={styles.section}>
         <Contact />
       </section>
     </div>

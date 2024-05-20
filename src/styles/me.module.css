@@ -1,0 +1,128 @@
+.skillSection {
+  position: relative;
+  margin-bottom: 10vh;
+  margin-left: 10vh;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 10vh;
+}
+.heading{
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  text-transform: capitalize;
+  font-weight: 300;
+  margin-bottom: 100px;
+}
+
+.skillContainer {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  color: #fff;
+}
+
+.skillRow {
+  display: none;
+  flex: 1;
+}
+
+.skillRow.activeRow {
+  display: flex;
+  justify-content: flex-start; /* Alinea los elementos al inicio */
+}
+
+.skillCard {
+  position: relative;
+}
+
+.skillImg {
+  display: block;
+  margin: auto;
+  height: 200px;
+}
+
+.skillName {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 30px 0 20px;
+}
+
+.skillInfo {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.skillLevel {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  border-radius: 50%;
+  border: 10px solid;
+}
+
+.skillCard:nth-child(1) .skillLevel {
+  background: #ff4f4f28;
+  border-color: #ff4f4f;
+  color: #ff4f4f;
+}
+
+.skillCard:nth-child(2) .skillLevel {
+  background: #4fa0ff28;
+  border-color: #4fa0ff;
+  color: #4fa0ff;
+}
+
+.skillCard:nth-child(3) .skillLevel {
+  background: #ffed4f28;
+  border-color: #ffed4f;
+  color: #ffed4f;
+}
+
+.skillCard:nth-child(4) .skillLevel {
+  background: #52ff4f28;
+  border-color: #52ff4f;
+  color: #52ff4f;
+}
+
+.skillCard:nth-child(5) .skillLevel {
+  background: #4fdfff28;
+  border-color: #4fdfff;
+  color: #4fdfff;
+}
+
+.skillCard:nth-child(6) .skillLevel {
+  background: #ffed4f28;
+  border-color: #ffed4f;
+  color: #ffed4f;
+}
+
+.skillCard:nth-child(7) .skillLevel {
+  background: #ff4f4f28;
+  border-color: #ffa44f;
+  color: #ffa44f;
+}
+
+.skillCard:nth-child(8) .skillLevel {
+  background: #4fdfff28;
+  border-color: #4fdfff;
+  color: #4fdfff;
+}
+
+.skillCard:nth-child(9) .skillLevel {
+  background: #07090928;
+  border-color: #5b6061;
+  color: #5b6061;
+}
