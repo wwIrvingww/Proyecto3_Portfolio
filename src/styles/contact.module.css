@@ -76,11 +76,12 @@
 .mainText{
   font-family: 'ubuntu', sans-serif;
   font-size: 1.2em;
-  color: #F29393;
+  color: #73BBC9;
   font-weight: 600;
 }
 
 .subText{
+    color: #a8d8e1;
     font-family: 'ubuntu', sans-serif;
     display: inline-block;
     font-size: 1em;
@@ -88,7 +89,7 @@
 
 .windowsItems{
   font-family: 'biryani', sans-serif;
-  color: #FFCCB3;
+  color: #61E5FF;;
   border: solid 2px #232323;
   border-radius: 4px;
   user-select: text;

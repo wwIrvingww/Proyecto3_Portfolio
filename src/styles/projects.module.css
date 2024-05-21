@@ -13,11 +13,12 @@
     font-family: 'ubuntu', sans-serif;
     font-weight: 700;
     font-size: 2rem;
+    color: #73BBC9;
   }
   
   .description {
     font-family: 'alegreya', sans-serif;
-    color: #c69768;
+    color: #FCE9F1;
     margin-top: 20px;
     font-weight: 450;
     line-height: 1.2;

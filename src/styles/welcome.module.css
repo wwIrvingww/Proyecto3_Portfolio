@@ -9,18 +9,19 @@
     height: 400px;
   }
   
-  
+
   
 .title {
     font-size: 2.5rem;
-    color: #F3F0CA;
+    color: #73BBC9;
+    /* color: #FCE9F1;  */
     margin-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif; 
 }
   
 .description {
     font-size: 1.25rem;
-    color: #E1AA74;
+    color: #f1cae1;
     text-align: left;
     max-width: 600px;
     line-height: 1.5;
@@ -28,7 +29,7 @@
 }
 
 .button {
-    background-color: #3876BF;
+    background-color: #73BBC9;
     color: #192655;
     padding: 10px 20px;
     border-radius: 45px;
@@ -42,8 +43,8 @@
 }
 
 .button:hover {
-    background-color: #E1AA74;
-    color: #192655;
+    background-color: #F1D4E5;
+    color: black;
 }
 
 .cat {

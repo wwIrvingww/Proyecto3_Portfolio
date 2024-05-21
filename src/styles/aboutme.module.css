@@ -83,6 +83,7 @@
 }
 
 .infoSection h2 {
+  color: #ffb9e2;
   font-family: 'Ubuntu', sans-serif;
   font-size: 2rem;
   font-weight: 700;
@@ -90,6 +91,7 @@
 }
 
 .infoSection p {
+  color: #FCE9F1;
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.5;
@@ -109,11 +111,12 @@
 .hobbiesTitle {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #ffb9e2;
   margin-bottom: 10px;
 }
 
 .hobbiesList {
+  color: #FCE9F1;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
