@@ -1,9 +1,23 @@
+.containerMAX {
+  display: flex;
+  overflow: hidden;
+}
+
 .container {
+  width: 100vw; 
+  height: 100vh; 
   display: flex;
   flex-direction: row;
-  height: 100vh;
-  overflow-x: auto; 
+  align-items: center; 
+  scroll-snap-align: start;
   scroll-snap-type: x mandatory; 
+  overflow-x: auto; 
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.container::-webkit-scrollbar {
+  display: none;
 }
 
 .section {
@@ -45,7 +59,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 100%; */
+  height: 100%; 
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -97,9 +111,7 @@
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 10px;
- 
 }
-
 
 .hobbiesList {
   display: flex;
@@ -116,43 +128,6 @@
   font-size: 17pt;
 }
 
-.skillsSection {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.containerMAX {
-  display: flex;
-  overflow: hidden;
-}
-
-.container {
-  width: 100vw; 
-  height: 100vh; 
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
-  scroll-snap-align: start; 
-}
-
-.section {
-  width: 100%; 
-  height: 100%; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skillsSection {
-  display: flex;
-  justify-content: space-around; 
-  align-items: center; 
-  height: 80%;
-}
-
 .icon {
   margin-right: 10px;
   transition: transform 0.3s ease;
@@ -160,4 +135,12 @@
 
 .icon:hover {
   transform: scale(1.2);
+}
+
+.skillsSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,13 +1,46 @@
-import React from 'react';
+"use client";
+import React, { useEffect, useRef, useState } from 'react';
 import styles from '../styles/aboutme.module.css';
 import Skills from './_Skills';
 import Skillss from './Skillss';
 import { FaSwimmer, FaBook, FaPenFancy, FaChess } from 'react-icons/fa';
 
 const AboutMe = () => {
+  const containerRef = useRef(null);
+  const [scrollDirection, setScrollDirection] = useState('right');
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (containerRef.current) {
+        const container = containerRef.current;
+        if (scrollDirection === 'right') {
+          container.scrollBy({
+            top: 0,
+            left: container.offsetWidth / 0.5,
+            behavior: 'smooth',
+          });
+          if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
+            setScrollDirection('left');
+          }
+        } else {
+          container.scrollBy({
+            top: 0,
+            left: -container.offsetWidth / 0.5,
+            behavior: 'smooth',
+          });
+          if (container.scrollLeft === 0) {
+            setScrollDirection('right');
+          }
+        }
+      }
+    }, 5000); 
+
+    return () => clearInterval(interval);
+  }, [scrollDirection]);
+
   return (
     <div className={styles.containerMAX}>
-      <div className={styles.container}>
+      <div className={styles.container} ref={containerRef}>
         <div className={styles.section}>
           <div className={styles.card}>
             <div className={styles.imageSection}>
