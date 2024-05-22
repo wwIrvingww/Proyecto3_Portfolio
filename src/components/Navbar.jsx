@@ -1,10 +1,17 @@
 "use client";
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import Link from 'next/link';
 import styles from '../styles/navbar.module.css';
 
 const Navbar = () => {
+  useEffect(() => {
+    console.log('Navbar mounted');
+    return () => {
+      console.log('Navbar unmounted');
+    };
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.logoContainer}>
@@ -29,4 +36,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default React.memo(Navbar);
