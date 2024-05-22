@@ -4,6 +4,7 @@ import styles from '../styles/aboutme.module.css';
 import Skills from './_Skills';
 import Skillss from './Skillss';
 import { FaSwimmer, FaBook, FaPenFancy, FaChess } from 'react-icons/fa';
+import Particules from './Particules';
 
 const AboutMe = () => {
   const containerRef = useRef(null);
@@ -33,7 +34,7 @@ const AboutMe = () => {
           }
         }
       }
-    }, 5000); 
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [scrollDirection]);
@@ -67,15 +68,20 @@ const AboutMe = () => {
               </ul>
             </div>
           </div>
+        
         </div>
         <div className={styles.section}>
           <div className={styles.skillsSection}>
             <Skillss />
-            {/* <Skills /> */}
+          
+          </div>
+          <div className={styles.particleCont}>
+              <Particules />
           </div>
         </div>
-      </div>
+      </div>  
     </div>
+    
   );
 };
 

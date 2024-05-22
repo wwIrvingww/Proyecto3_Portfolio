@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/contact.module.css';
+import FluidAnimation from './FluidAnimation';
 
 const Contact = () => {
   return (
@@ -32,10 +33,14 @@ const Contact = () => {
                 </div>
 
             </div>
+
+        </div>
+        <div className={styles.fluidAnimation}>
+            <FluidAnimation />
         </div>
       
     </div>
   )
 }
 
-export default Contact
+export default Contact;

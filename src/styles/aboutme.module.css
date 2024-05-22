@@ -1,19 +1,24 @@
 .containerMAX {
-  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
+  z-index: 0;
 }
 
 .container {
-  width: 100vw; 
-  height: 100vh; 
+  position: relative; /* Esto es importante para que los elementos hijos con position absolute se posicionen relativamente a este contenedor */
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center; 
+  align-items: center;
   scroll-snap-align: start;
-  scroll-snap-type: x mandatory; 
-  overflow-x: auto; 
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  z-index: 2; /* Asegúrate de que este z-index esté por encima del de las partículas */
 }
 
 .container::-webkit-scrollbar {
@@ -21,13 +26,13 @@
 }
 
 .section {
-  width: 100vw; 
-  height: 100vh; 
-  flex-shrink: 0; 
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: start; 
+  scroll-snap-align: start;
 }
 
 .card {
@@ -59,7 +64,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -125,7 +130,7 @@
 }
 
 .hobbiesList li {
-  flex: 1 1 45%; 
+  flex: 1 1 45%;
   margin: 10px 0;
   font-family: 'Biryani', sans-serif;
   font-size: 17pt;
@@ -141,9 +146,30 @@
 }
 
 .skillsSection {
+  background-color: transparent;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
+}
+
+/* Ensure Particules component is positioned absolutely and behind the content */
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure it's below the container */
+}
+
+.particleCont {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure it's below the container */
 }

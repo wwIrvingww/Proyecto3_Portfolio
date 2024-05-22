@@ -17,6 +17,7 @@ const Projects = () => {
       </div>
       <Carousel />
     </div>
+    
   );
 }
 
