@@ -4,13 +4,14 @@
   display: flex;
   flex-direction: column;
   width: 500px;
-  background-color: #2b2b2b;
+  height: 500px;
+  background-color: #201f1f;
   border-radius: 4px;
   line-break: auto;
   user-select: none;
   border: solid 1px var(--osx-border-color);
   box-shadow: var(--shadow);
-  height: clamp(28em, 80vh, 36em);
+  /* height: clamp(28em, 80vh, 36em); */
   transition: all .4s cubic-bezier(.68, -.55, .27, 1.55);
   margin: 0;
   position: relative; /* Asegurar que el contenedor principal sea relativo */
@@ -76,24 +77,32 @@
 
 .mainText {
   font-family: 'ubuntu', sans-serif;
-  font-size: 1.2em;
-  color: #73BBC9;
+  font-size: 2.0em;
+  color: #F689C9;
   font-weight: 600;
 }
 
 .subText {
-  color: #a8d8e1;
+  color: #F1D4E5;
   font-family: 'ubuntu', sans-serif;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-weight: bolder;
+  z-index: 1;
 }
 
 .windowsItems {
   font-family: 'biryani', sans-serif;
-  color: #61E5FF;
-  border: solid 2px #232323;
+  color: #fff;
+  border: solid 2px #fffbfb;
   border-radius: 4px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
   user-select: text;
+  background-color: #000000ad;
+  z-index: 1;
+  height: 50v;
+  margin-top: 5vh;
 }
 
 .item {
@@ -106,7 +115,8 @@
 .fluidAnimation {
   position: absolute;
   top: 0;
-  left: 0; /* corregido para estar en el borde izquierdo */
+  left: 0;
+  bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 110vh;
 }

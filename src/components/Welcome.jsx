@@ -24,9 +24,7 @@ const Welcome = () => {
       <div className={styles.cat}>
         <Cat /> 
       </div>
-      <div className={styles.fluidAnimation}>
-        <FluidAnimation />
-      </div>
+      
     </>
   );
 };

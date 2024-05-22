@@ -4,6 +4,7 @@ import FluidAnimation from './FluidAnimation';
 
 const Contact = () => {
   return (
+    <>
     <div className={styles.maxContainer}>
         <div className={styles.header}>
             <div className={styles.dotsContainer}>
@@ -40,6 +41,8 @@ const Contact = () => {
         </div>
       
     </div>
+   
+    </>
   )
 }
 
