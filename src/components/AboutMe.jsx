@@ -74,13 +74,10 @@ const AboutMe = () => {
           <div className={styles.skillsSection}>
             <Skillss />
             <div className={styles.particleCont}>
-              <Particules />
-             </div>
-          
+              <Particules color="#561050" /></div>
           </div>
           <div className={styles.particleCont}>
-              <Particules />
-          </div>
+            <Particules color="#3E065F" /></div>
         </div>
       </div>  
     </div>

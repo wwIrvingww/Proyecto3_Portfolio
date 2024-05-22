@@ -1,6 +1,7 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 
-const Particules = () => {
+const Particules = ({ color }) => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -54,7 +55,6 @@ const Particules = () => {
         const y = Math.random() * (canvas.height - size * 2) + size;
         const directionX = (Math.random() * 0.4) - 0.2;
         const directionY = (Math.random() * 0.4) - 0.2;
-        const color = '#ffffff';
 
         particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
       }
@@ -87,7 +87,7 @@ const Particules = () => {
         init();
       });
     };
-  }, []);
+  }, [color]);
 
   return <canvas ref={canvasRef} className="particles" />;
 };

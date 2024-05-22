@@ -11,10 +11,10 @@
   user-select: none;
   border: solid 1px var(--osx-border-color);
   box-shadow: var(--shadow);
-  /* height: clamp(28em, 80vh, 36em); */
   transition: all .4s cubic-bezier(.68, -.55, .27, 1.55);
-  margin: 0;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
   position: relative; /* Asegurar que el contenedor principal sea relativo */
+  z-index: 1; /* Asegura que esté sobre las partículas */
 }
 
 .header {
@@ -118,5 +118,24 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
+  z-index: 0;
+}
+
+.particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2; /* Asegura que esté detrás del contenedor */
+}
+
+.particleCont {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2; /* Asegura que esté detrás del contenedor */
 }

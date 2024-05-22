@@ -22,8 +22,8 @@ const Projects = () => {
       </div>  
       <Carousel />
       <div className={styles.particleCont}>
-    <Particules />
-    </div>
+      <Particules color="#5D0E41" />
+        </div>
     </div>
  
     </>
