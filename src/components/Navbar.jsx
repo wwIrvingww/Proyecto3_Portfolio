@@ -1,15 +1,16 @@
 "use client";
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import Link from 'next/link';
 import styles from '../styles/navbar.module.css';
 
 const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logoContainer}>
-        <ScrollLink to="/" smooth={true} duration={500} spy={true} className={styles.element}>
+        <Link href="/" className={styles.element}>
           PORTFOLIO
-        </ScrollLink>
+        </Link>
       </div>
       <div className={styles.controls}>
         <div className={styles.nav}>

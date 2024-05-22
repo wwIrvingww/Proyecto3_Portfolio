@@ -22,6 +22,20 @@ const slides = [
     buttonText: 'Open project',
     buttonLink: 'https://www.figma.com/proto/AMqrokozLbyUc70QCT4sqr/Irtra-experience?node-id=3-684&starting-point-node-id=3%3A684&t=bf33d63oQDEzAVIB-1',
     imageUrl: "https://i.pinimg.com/736x/4d/6e/71/4d6e71e4748061c1d0b02ed0ab649d8c.jpg"
+  },
+  {
+    title: "Working website",
+    description: "I am currently working on a collaborative application. It is being designed to make the search for reliable workers in specific trades less complicated.",
+    buttonText: 'Open project',
+    buttonLink: 'https://github.com/cmd-AJ/Ing-Software.git',
+    imageUrl: "/image/Sabte.png"
+  },
+  {
+    title: "Chat",
+    description: "I worked on a chat project. It calls an API to get the messages and send them. It was a fun project to work on and I learned a lot about APIs.",
+    buttonText: 'Open project',
+    buttonLink: 'http://uwu-guate.site/lab5-chat/22781/Lab05_Chat/index.html',
+    imageUrl: "/image/Chat.png"
   }
 ];
 
