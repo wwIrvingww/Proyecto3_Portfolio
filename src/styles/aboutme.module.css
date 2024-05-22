@@ -151,8 +151,9 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
   align-items: center;
-  z-index: 2;
+  z-index: 0;
 }
 
 .particles {

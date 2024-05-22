@@ -73,6 +73,9 @@ const AboutMe = () => {
         <div className={styles.section}>
           <div className={styles.skillsSection}>
             <Skillss />
+            <div className={styles.particleCont}>
+              <Particules />
+             </div>
           
           </div>
           <div className={styles.particleCont}>
