@@ -1,14 +1,20 @@
 "use client";
-import React from 'react'
+import React from 'react';
 import styles from '../styles/contact.module.css';
 import FluidAnimation from './FluidAnimation';
 import Particules from './Particules';
 
 const Contact = () => {
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text).then(() => {
+      alert('Copied to clipboard!');
+    }, () => {
+      alert('Failed to copy!');
+    });
+  };
+
   return (
     <>
-     
-  
       <div className={styles.maxContainer}>
         <div className={styles.header}>
           <div className={styles.dotsContainer}>
@@ -24,11 +30,11 @@ const Contact = () => {
             <div className={styles.windowsItems}>
               <div className={styles.item}>
                 <label>Secondary email address:</label>
-                <p>mor22781@uvg.edu.gt</p>
+                <p onClick={() => copyToClipboard('mor22781@uvg.edu.gt')} style={{ cursor: 'pointer' }}>mor22781@uvg.edu.gt</p>
               </div>
               <div className={styles.item}>
                 <label>Cell number:</label>
-                <p>+502 3753-3940</p>
+                <p onClick={() => copyToClipboard('+502 3753-3940')} style={{ cursor: 'pointer' }}>+502 3753-3940</p>
               </div>
               <div className={styles.item}>
                 <label>Address:</label>
@@ -37,15 +43,15 @@ const Contact = () => {
             </div>
           </div>
           <div className={styles.fluidAnimation}>
-        <FluidAnimation />
-      </div>
+            <FluidAnimation />
+          </div>
         </div>
-            <div className={styles.particleCont}>
-            <Particules color="#3C4048" />
-            </div>
+        <div className={styles.particleCont}>
+          <Particules color="#3C4048" />
+        </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default Contact;

@@ -13,7 +13,6 @@ const FluiAnimation = () => {
       y: 0,
       px: 0,
       py: 0,
-      down: false,
     };
 
     const canvas_width = 500;
@@ -68,12 +67,6 @@ const FluiAnimation = () => {
           up_right.down_left = vec_cells[col][row];
         }
       }
-
-      window.addEventListener('mousedown', mouse_down_handler);
-      window.addEventListener('touchstart', touch_start_handler);
-
-      window.addEventListener('mouseup', mouse_up_handler);
-      window.addEventListener('touchend', touch_end_handler);
 
       canvas.addEventListener('mousemove', mouse_move_handler);
       canvas.addEventListener('touchmove', touch_move_handler);
@@ -142,9 +135,7 @@ const FluiAnimation = () => {
         const cell_datas = vec_cells[i];
         for (let j = 0; j < cell_datas.length; j++) {
           const cell_data = cell_datas[j];
-          if (mouse.down) {
-            change_cell_velocity(cell_data, mouse_xv, mouse_yv, pen_size);
-          }
+          change_cell_velocity(cell_data, mouse_xv, mouse_yv, pen_size);
           update_pressure(cell_data);
         }
       }
@@ -244,27 +235,6 @@ const FluiAnimation = () => {
       this.xv = this.yv = 0;
     }
 
-    function mouse_down_handler(e) {
-      e.preventDefault();
-      mouse.down = true;
-    }
-
-    function mouse_up_handler() {
-      mouse.down = false;
-    }
-
-    function touch_start_handler(e) {
-      e.preventDefault();
-      const rect = canvas.getBoundingClientRect();
-      mouse.x = mouse.px = e.touches[0].pageX - rect.left;
-      mouse.y = mouse.py = e.touches[0].pageY - rect.top;
-      mouse.down = true;
-    }
-
-    function touch_end_handler(e) {
-      if (!e.touches) mouse.down = false;
-    }
-
     function mouse_move_handler(e) {
       e.preventDefault();
       mouse.px = mouse.x;
@@ -285,12 +255,8 @@ const FluiAnimation = () => {
     init();
 
     return () => {
-      window.removeEventListener('mousedown', mouse_down_handler);
-      window.removeEventListener('mouseup', mouse_up_handler);
-      window.removeEventListener('mousemove', mouse_move_handler);
-      window.removeEventListener('touchstart', touch_start_handler);
-      window.removeEventListener('touchend', touch_end_handler);
-      window.removeEventListener('touchmove', touch_move_handler);
+      canvas.removeEventListener('mousemove', mouse_move_handler);
+      canvas.removeEventListener('touchmove', touch_move_handler);
     };
   }, []);
 
